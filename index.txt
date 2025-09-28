@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT Majek Delivery Indonesia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #1e88e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1565c0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service-box {
+      flex: 1 1 250px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #1565c0;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PT Majek Delivery Indonesia</h1>
+    <p>Melayani Antar Cepat, Tepat, dan Aman</p>
+  </header>
+
+  <nav>
+    <a href="#about">Tentang Kami</a>
+    <a href="#services">Layanan</a>
+    <a href="#coverage">Area Layanan</a>
+    <a href="#join">Gabung</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <p>
+      PT Majek Delivery Indonesia adalah perusahaan jasa kurir dan logistik berbasis aplikasi 
+      yang hadir untuk memberikan layanan pengiriman cepat, aman, dan terpercaya. 
+      Kami terus berkembang membuka cabang di berbagai kota di Indonesia.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Antar Barang</h3>
+        <p>Layanan pengiriman paket cepat dan aman dengan harga terjangkau.</p>
+      </div>
+      <div class="service-box">
+        <h3>Antar Makanan</h3>
+        <p>Pesan makanan dari restoran favoritmu, kami antar sampai tujuan.</p>
+      </div>
+      <div class="service-box">
+        <h3>Kurir Instan</h3>
+        <p>Layanan kurir instan untuk kebutuhan mendesak dengan tracking real-time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="coverage">
+    <h2>Area Layanan</h2>
+    <p>Saat ini Majek Delivery melayani di beberapa kota:</p>
+    <ul>
+      <li>Palangka Raya</li>
+      <li>Banjarmasin</li>
+      <li>(dan cabang lainnya akan segera dibuka)</li>
+    </ul>
+  </section>
+
+  <section id="join">
+    <h2>Gabung Bersama Kami</h2>
+    <p>
+      Ingin jadi bagian dari Majek Delivery?  
+      Bergabunglah sebagai <b>Driver</b> atau <b>Ketua Cabang</b> untuk mengembangkan layanan kami di seluruh Indonesia.  
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak Kami</h2>
+    <p>
+      📍 Kantor Pusat: Palangka Raya, Kalimantan Tengah <br>
+      📞 WhatsApp: <a href="https://wa.me/628xxxxxx" target="_blank">Hubungi Kami</a> <br>
+      ✉️ Email: info@majekdelivery.co.id
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 PT Majek Delivery Indonesia. All rights reserved.</p>
+  </footer>
+</body>
+</html>
