@@ -5,142 +5,189 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PT Majek Delivery Indonesia</title>
   <style>
-    body { margin: 0; font-family: 'Arial', sans-serif; line-height: 1.6; background: #fff; color: #333; }
-    header { background: #001f3f; color: #fff; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; }
-    header img { height: 40px; }
-    nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #f8b400; }
-
-    .hero { 
-      background: url('banner.jpg') no-repeat center center/cover; 
-      color: #fff; text-align: center; 
-      padding: 120px 20px; 
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      color: #333;
     }
-    .hero h2 { font-size: 40px; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
-    .hero p { font-size: 18px; margin-bottom: 20px; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); }
-    .btn { background: #f8b400; color: #000; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    header {
+      background: #001f3f; /* navy */
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url("banner.jpg") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 { font-size: 42px; }
+    .hero p { font-size: 20px; }
 
-    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-    section h2 { text-align: center; color: #001f3f; margin-bottom: 30px; font-size: 28px; }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #001f3f;
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-    .layanan { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-    .card { background: #f4f4f4; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .card img { width: 80px; margin-bottom: 15px; }
+    .services, .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+    .services div, .team-member {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    .team-member img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
 
-    .area { background: #f4f4f4; border-radius: 10px; padding: 40px; text-align: center; }
-
-    .team { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: center; }
-    .team-member { background: #f4f4f4; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .team-member img { width: 120px; height: 120px; border-radius: 50%; margin-bottom: 15px; object-fit: cover; }
-
-    .kontak { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .kontak .info { background: #f4f4f4; padding: 20px; border-radius: 10px; text-align: center; }
-
-    footer { background: #001f3f; color: #fff; text-align: center; padding: 15px 0; margin-top: 40px; }
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <img src="logo.png" alt="Majek Delivery Logo">
     <nav>
-      <a href="#home">Home</a>
       <a href="#tentang">Tentang</a>
       <a href="#layanan">Layanan</a>
-      <a href="#tim">Founder</a>
       <a href="#area">Area</a>
+      <a href="#tim">Manajemen</a>
       <a href="#kontak">Kontak</a>
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <h2>Solusi Pengiriman Cepat & Tepat</h2>
-    <p>Transportasi, makanan, barang, dan belanja online dalam genggaman Anda.</p>
-    <a href="#kontak" class="btn">Pesan Sekarang</a>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>PT Majek Delivery Indonesia</h1>
+    <p>Solusi Transportasi, Pengiriman, dan Kuliner dalam Satu Aplikasi</p>
   </section>
 
+  <!-- Tentang Kami -->
   <section id="tentang">
     <h2>Tentang Kami</h2>
-    <p>
-      PT Majek Delivery Indonesia adalah perusahaan jasa transportasi dan pengiriman berbasis teknologi 
-      yang berdiri di Palangka Raya. Kami berkomitmen menghadirkan layanan cepat, aman, dan terpercaya 
-      untuk masyarakat Indonesia.
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      PT Majek Delivery Indonesia hadir sebagai layanan transportasi online, pengiriman, 
+      dan pemesanan makanan yang mengutamakan kecepatan, kenyamanan, serta pelayanan terbaik. 
+      Dengan berbagai cabang di Indonesia, kami terus berkembang untuk menjadi mitra terpercaya 
+      bagi masyarakat.
     </p>
   </section>
 
+  <!-- Layanan -->
   <section id="layanan">
     <h2>Layanan Kami</h2>
-    <div class="layanan">
-      <div class="card">
-        <img src="ride.png" alt="Majek Ride">
-        <h3>Majek Ride</h3>
-        <p>Layanan transportasi penumpang cepat dan nyaman.</p>
-      </div>
-      <div class="card">
-        <img src="food.png" alt="Majek Food">
-        <h3>Majek Food</h3>
-        <p>Pesan & antar makanan dari restoran favorit Anda.</p>
-      </div>
-      <div class="card">
-        <img src="send.png" alt="Majek Send">
-        <h3>Majek Send</h3>
-        <p>Kirim barang & dokumen instan dengan aman.</p>
-      </div>
-      <div class="card">
-        <img src="shop.png" alt="Majek Shop">
-        <h3>Majek Shop</h3>
-        <p>Antar pesanan dari toko online & UMKM lokal.</p>
-      </div>
+    <div class="services">
+      <div><h3>Majek Ride</h3><p>Layanan transportasi cepat dan nyaman.</p></div>
+      <div><h3>Majek Food</h3><p>Pesan makanan favorit dengan mudah.</p></div>
+      <div><h3>Majek Send</h3><p>Pengiriman barang cepat dan aman.</p></div>
+      <div><h3>Majek Shop</h3><p>Belanja online dengan sistem terpercaya.</p></div>
     </div>
   </section>
 
-  <section id="tim">
-    <h2>Founder & Tim</h2>
-    <div class="team">
-      <div class="team-member">
-        <img src="founder1.jpg" alt="Founder 1">
-        <h3>Nama Founder 1</h3>
-        <p>CEO & Founder</p>
-      </div>
-      <div class="team-member">
-        <img src="founder2.jpg" alt="Founder 2">
-        <h3>Nama Founder 2</h3>
-        <p>Co-Founder</p>
-      </div>
-      <div class="team-member">
-        <img src="manager.jpg" alt="Manager">
-        <h3>Nama Manager</h3>
-        <p>Operational Manager</p>
-      </div>
-    </div>
-  </section>
-
+  <!-- Area -->
   <section id="area">
     <h2>Area Layanan</h2>
-    <div class="area">
-      <p>Palangka Raya • Banjarmasin • dan segera berkembang ke kota lain di Indonesia.</p>
+    <p style="text-align:center;">
+      Saat ini Majek Delivery tersedia di: Surabaya, Pulang Pisau, Kuala Kapuas, Kuala Kurun, 
+      dan akan terus berkembang ke berbagai daerah lain di Indonesia.
+    </p>
+  </section>
+
+  <!-- Tim -->
+  <section id="tim">
+    <h2>Manajemen & Tim</h2>
+    <div class="team">
+
+      <div class="team-member">
+        <img src="direktur.jpg" alt="Direktur">
+        <h3>Nama Direktur</h3>
+        <p>Direktur</p>
+      </div>
+
+      <div class="team-member">
+        <img src="bm-surabaya.jpg" alt="Branch Manager Surabaya">
+        <h3>Nama Manager</h3>
+        <p>Branch Manager Surabaya</p>
+      </div>
+
+      <div class="team-member">
+        <img src="bm-pulangpisau.jpg" alt="Branch Manager Pulang Pisau">
+        <h3>Nama Manager</h3>
+        <p>Branch Manager Pulang Pisau</p>
+      </div>
+
+      <div class="team-member">
+        <img src="bm-kualakapuas.jpg" alt="Branch Manager Kuala Kapuas">
+        <h3>Nama Manager</h3>
+        <p>Branch Manager Kuala Kapuas</p>
+      </div>
+
+      <div class="team-member">
+        <img src="bm-kualakurun.jpg" alt="Branch Manager Kuala Kurun">
+        <h3>Nama Manager</h3>
+        <p>Branch Manager Kuala Kurun</p>
+      </div>
+
+      <div class="team-member">
+        <img src="advisor.jpg" alt="Advisor">
+        <h3>Nama Advisor</h3>
+        <p>Advisor</p>
+      </div>
+
+      <div class="team-member">
+        <img src="field-staff.jpg" alt="Field Staff">
+        <h3>Nama Staff</h3>
+        <p>Field Staff</p>
+      </div>
+
     </div>
   </section>
 
+  <!-- Kontak -->
   <section id="kontak">
     <h2>Kontak Kami</h2>
-    <div class="kontak">
-      <div class="info">
-        <h3>Alamat</h3>
-        <p>Palangka Raya, Kalimantan Tengah</p>
-      </div>
-      <div class="info">
-        <h3>WhatsApp</h3>
-        <p>08xxxxxxx</p>
-      </div>
-      <div class="info">
-        <h3>Email</h3>
-        <p>support@majekdelivery.id</p>
-      </div>
-    </div>
+    <p style="text-align:center;">
+      Email: info@majekdelivery.co.id | WhatsApp: +62 812-3456-7890
+    </p>
   </section>
 
+  <!-- Footer -->
   <footer>
     © 2025 PT Majek Delivery Indonesia
   </footer>
+
 </body>
 </html>
